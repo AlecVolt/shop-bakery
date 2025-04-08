@@ -45,6 +45,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 
 address {
@@ -53,6 +54,26 @@ address {
 
 ul {
   list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* BUTTON */
@@ -116,32 +137,66 @@ ul {
   text-transform: uppercase;
 }
 
-/* TADITIONS */
-.advantages-list {
+.section {
+  padding: 48px 0;
+}
+
+/* HERO */
+.hero-section {
+  padding: 272px 0;
+}
+
+/* ADVANTAGES */
+.advantages-section{
+  padding: 16px 0;
   background-color: var(--color-brand-light);
   color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
 
+/* TADITIONS */
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
 /* CHEFS */
+.chefs-title {
+  margin-bottom: 80px;
+}
+
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* FORMATS */
+.formats-title {
+  margin-bottom: 80px;
+}
+
 .formats-list {
   font-size: 14px;
   font-weight: 300;
   color: var(--color-primary-light);
 }
+
 .format-title {
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* CONTACTS */
+.contacts-title {
+  margin-bottom: 16px;
+}
+
 .policy-agree {
   font-size: 12px;
 }
