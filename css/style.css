@@ -41,6 +41,7 @@
 /* BASE */
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -54,6 +55,8 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -101,10 +104,28 @@ h1, h2, h3, h4, h5, h6, p {
 
 .nav-link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 /* HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
 
 /* SECTIONS BASE */
 .hero-title {
@@ -155,6 +176,12 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 300;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 /* TADITIONS */
 .traditions-section {
   padding-top: 96px;
@@ -162,6 +189,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 .traditions-title {
   margin-bottom: 42px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 680px;
 }
 
 /* CHEFS */
@@ -190,6 +227,22 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+
+.formats-item{
+  flex-basis: calc((100% - 40px)/ 3);
+}
+
+.format-card {
+  border: 1px solid gray; /*remove*/
+  background-color: gray; /*remove*/
+  border-radius: 16px;
+  padding: 24px;
 }
 
 /* CONTACTS */
