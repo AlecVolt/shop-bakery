@@ -141,6 +141,10 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.3;
 }
 
+.section-title.centered {
+  text-align: center;
+}
+
 .accent-hero {
   color: var(--color-brand-light);
 }
@@ -165,6 +169,10 @@ h1, h2, h3, h4, h5, h6, p {
 /* HERO */
 .hero-section {
   padding: 272px 0;
+  background-image: url('../images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 /* ADVANTAGES */
@@ -201,9 +209,28 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 680px;
 }
 
+.traditions-image {
+  border-radius: 400px 400px 0 0;
+}
+
 /* CHEFS */
 .chefs-title {
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 532px;
+}
+
+.chefs-title::before,
+.chefs-title::after {
+  content: '';
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-secondary-light);
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), 
+  -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -239,8 +266,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .format-card {
-  border: 1px solid gray; /*remove*/
-  background-color: gray; /*remove*/
+  height: 444px;
+  background-image: linear-gradient(to bottom, 
+  rgba(49, 38, 26, 0), rgba(49, 38, 26, 0.71), 
+  var(--color-primary-dark));
   border-radius: 16px;
   padding: 24px;
 }
@@ -259,6 +288,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* FOOTER */
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .address-link {
   color: var(--color-primary-light);
   text-decoration: none;
