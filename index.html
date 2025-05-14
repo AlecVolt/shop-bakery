@@ -155,14 +155,34 @@
         <section class="section contact-section" id="contact-section">
             <div class="wrapper">
                 <div class="contact-container">
-                    <div class="contact-form">
+                    <div class="contact-form-container">
                         <h2 class="section-title contact-title">Приєднуйся до мережі пекарень</h2>
-                        <p class="accent-text-dark">Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <!-- FORM -->
-                        <button class="button" type="button">Замовити дзвінок</button>
-                        <p class="policy-agree">Натискаючи на кнопку я погоджуюсь 
-                            <a class="policy-agree-link" href="#">з політикою конфіденційності</a>
-                        </p>
+                        <p class="contact-text accent-text-dark">Заповни форму, щоб ми звʼязались з тобою!</p>
+                        <form name="contact-form" autocomplete="off" novalidate>
+                            <div class="contact-form-field">
+                                <label class="contact-form-label visually-hidden" for="user-name">Ім'я</label>
+                                <input class="contact-form-input" type="text" name="user-name" 
+                                id="user-name" placeholder="Ім'я">
+                            </div>
+            
+                            <div class="contact-form-field">
+                                <label class="contact-form-label visually-hidden" for="user-tel">Телефон</label>
+                                <input class="contact-form-input" type="tel" name="user-tel" 
+                                id="user-tel" placeholder="Телефон">
+                            </div>
+            
+                            <div class="contact-form-field">
+                                <label class="contact-form-label visually-hidden" for="user-email">Електронна пошта</label>
+                                <input class="contact-form-input" type="email" name="user-email" 
+                                id="user-email" placeholder="Електронна пошта">
+                            </div>
+            
+                            <button class="button contact-form-button" type="button">Замовити дзвінок</button>
+            
+                            <p class="policy-agree">Натискаючи на кнопку я погоджуюсь 
+                                <a class="policy-agree-link" href="#">з політикою конфіденційності</a>
+                            </p>
+                        </form>
                     </div>
                     <iframe class="contact-map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.327257819747!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sde!4v1731169772162!5m2!1suk!2sde"
@@ -228,7 +248,34 @@
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Cl</button>
+            <h2 class="section-title modal-title centered">Замовити дзвінок</h2>
+            <p class="modal-text centered accent-text-dark">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
 
+            <form name="modal-contact-form" autocomplete="off">
+                <div class="contact-form-field">
+                    <label class="contact-form-label visually-hidden" for="user-name">Ім'я</label>
+                    <input class="contact-form-input" type="text" name="user-name" 
+                    id="user-name" placeholder="Ім'я">
+                </div>
+
+                <div class="contact-form-field">
+                    <label class="contact-form-label visually-hidden" for="user-tel">Телефон</label>
+                    <input class="contact-form-input" type="tel" name="user-tel" 
+                    id="user-tel" placeholder="Телефон">
+                </div>
+
+                <div class="contact-form-field">
+                    <label class="contact-form-label visually-hidden" for="user-email">Електронна пошта</label>
+                    <input class="contact-form-input" type="email" name="user-email" 
+                    id="user-email" placeholder="Електронна пошта">
+                </div>
+
+                <button class="button contact-form-button modal-contact-form-button" type="button">Замовити дзвінок</button>
+
+                <p class="policy-agree">Натискаючи на кнопку я погоджуюсь 
+                    <a class="policy-agree-link" href="#">з політикою конфіденційності</a>
+                </p>
+            </form> 
         </div>
     </div>
 
