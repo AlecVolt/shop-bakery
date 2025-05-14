@@ -1,0 +1,22 @@
+.formats-title {
+  margin-bottom: 80px;
+}
+
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+}
+
+.formats-item{
+  flex-basis: calc((100% - 40px)/ 3);
+}
