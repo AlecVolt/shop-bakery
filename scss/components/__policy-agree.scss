@@ -1,0 +1,12 @@
+.policy-agree {
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 220px;
+  text-align: center;
+  margin: 0 auto;
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}
