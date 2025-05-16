@@ -16,29 +16,58 @@
   }
 
   &::before {
-    background-image: url(../images/decor-bread-small.png);
-    width: 180px;
-    height: 120px;
-    left: 0;
+    background-image: url(../../images/decor-bread-small-mobile.png);
+    width: 100px;
+    height: 200px;
+    top: 86px;
   }
 
   &::after {
-    background-image: url(../images/decor-bread-large.png);
-    width: 380px;
-    height: 190px;
+    background-image: url(../../images/decor-bread-large-mobile.png);
+    width: 104px;
+    height: 92px;
     right: 0;
   }
+
+  @media screen and (min-width: $bp-tablet) {
+    &::before {
+      background-image: url(../images/decor-bread-small.png);
+      width: 180px;
+      height: 120px;
+      left: 0;
+    }
+
+    &::after {
+      background-image: url(../images/decor-bread-large.png);
+      width: 380px;
+      height: 190px;
+      right: 0;
+    }
+  }
+
 
   &__container {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
+    text-align: center;
     gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
   }
 
   &__list-item {
@@ -64,6 +93,7 @@
 
   &__address-icon {
     fill: var(--color-primary-light);
+    margin-right: 24px;
 
     &:hover {
       fill: var(--color-brand-light);

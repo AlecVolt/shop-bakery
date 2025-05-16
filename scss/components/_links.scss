@@ -3,8 +3,8 @@
     color: var(--color-primary-light);
     text-decoration: none;
     transition: color .3s;
-}
-  
-.nav-link:hover {
-    color: var(--color-brand-light);
+
+    &:hover {
+        color: var(--color-brand-light);
+    }
 }
