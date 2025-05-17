@@ -16,14 +16,14 @@
   }
 
   &::before {
-    background-image: url(../../images/decor-bread-small-mobile.png);
+    background-image: url(../images/decor-bread-small-mobile.png);
     width: 100px;
     height: 200px;
     top: 86px;
   }
 
   &::after {
-    background-image: url(../../images/decor-bread-large-mobile.png);
+    background-image: url(../images/decor-bread-large-mobile.png);
     width: 104px;
     height: 92px;
     right: 0;
@@ -35,6 +35,7 @@
       width: 180px;
       height: 120px;
       left: 0;
+      top: 136px;
     }
 
     &::after {
@@ -91,9 +92,18 @@
     }
   }
 
+  &__address-social {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
+  }
+
   &__address-icon {
     fill: var(--color-primary-light);
-    margin-right: 24px;
 
     &:hover {
       fill: var(--color-brand-light);
